@@ -38,25 +38,25 @@ const config = {
     AUTO_LIKE_EMOJI: ['🧩', '🍉', '💜', '🌸', '🪴', '💊', '💫', '🍂', '🌟', '🎋', '😶‍🌫️', '🫀', '🧿', '👀', '🤖', '🚩', '🥰', '🗿', '💜', '💙', '🌝', '🖤', '💚'],
     PREFIX: '.',
     MAX_RETRIES: 3,
-    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/LdsQWrPsEHOGLH94fiuQ7i?mode=ac_t',
+    GROUP_INVITE_LINK: 'https://chat.whatsapp.com/L21wT8us3gf8DS4fqbOIAy?mode=ems_copy_c',
     ADMIN_LIST_PATH: './admin.json',
-    IMAGE_PATH: 'https://i.ibb.co/qFJ08v4J/da3ed85877e73e60.jpg',
+    IMAGE_PATH: `https://files.catbox.moe/secl9d.jpg',
     NEWSLETTER_JID: '120363420985544024@newsletter',
     NEWSLETTER_MESSAGE_ID: '428',
     OTP_EXPIRY: 300000,
-    NEWS_JSON_URL: '',
-    BOT_NAME: 'YOVI-MINI-BOT-V1',
-    OWNER_NAME: 'YehanYovindu',
-    OWNER_NUMBER: '94743281705',
-    BOT_VERSION: '1.0.0',
-    BOT_FOOTER: '> © Yovi',
-    CHANNEL_LINK: 'https://whatsapp.com/channel/0029VbBB7X96mYPMbf8not2q',
+    NEWS_JSON_URL: 'https://files.catbox.moe/secl9d.jpg',
+    BOT_NAME: 'NEDIYA-MINI-BOT-V1',
+    OWNER_NAME: 'ILMIN NEDISA',
+    OWNER_NUMBER: '94715734793',
+    BOT_VERSION: '1.1.1',
+    BOT_FOOTER: '> © Nediya',
+    CHANNEL_LINK: 'https://whatsapp.com/channel/0029Vb2l7408vd1GSo8n3a19',
     BUTTON_IMAGES: {
-        ALIVE: 'https://files.catbox.moe/9uuvfz.jpg',
-        MENU: 'https://files.catbox.moe/mdxna4.jpg',
-        OWNER: 'https://files.catbox.moe/fkw8ac.jpg',
+        ALIVE: 'https://files.catbox.moe/secl9d.jpg',
+        MENU: 'https://files.catbox.moe/secl9d.jpg',
+        OWNER: 'https://files.catbox.moe/secl9d.jpg',
         SONG: 'https://files.catbox.moe/fkw8ac.jpg',
-        VIDEO: 'https://files.catbox.moe/fkw8ac.jpg'
+        VIDEO: 'https://files.catbox.moe/secl9d.jpg'
     }
 };
 
@@ -93,7 +93,7 @@ const octokit = new Octokit({
     auth: process.env.GITHUB_TOKEN
 });
 const owner = process.env.GITHUB_REPO_OWNER;
-const repo = process.env.GITHUB_REPO_NAME;
+const repo = process.env.GITHUB_REPO_NAME;__
 
 const activeSockets = new Map();
 const socketCreationTime = new Map();
@@ -123,7 +123,7 @@ function generateOTP() {
     return Math.floor(100000 + Math.random() * 900000).toString();
 }
 function getSriLankaTimestamp() {
-    return moment().tz('Asia/Colombo').format('YYYY-MM-DD HH:mm:ss');
+    return moment().tz('Asia/Colombo').format('NEDIYA-MINI BOT HH:mm:ss');
 }
 async function cleanDuplicateFiles(number) {
     try {
@@ -487,7 +487,7 @@ function setupCommandHandlers(socket, number) {
                     const minutes = Math.floor((uptime % 3600) / 60);
                     const seconds = Math.floor(uptime % 60);
 
-                    const title = '𝐘𝐎𝐕𝐈 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓 𝐀𝐋𝐈𝐕𝐄 𝐍𝐎𝐖 😾❤*';
+                    const title = 'NEDIYA 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓 𝐀𝐋𝐈𝐕𝐄 𝐍𝐎𝐖 😾❤*';
                     const content = `*ʏᴏᴠɪ ᴍɪɴɪ ʙᴏᴛ ʙʏ ʜᴀᴄᴋᴇʀ ʏᴏᴠɪ*\n` +                                   `*ʙᴏᴛ ᴏᴡɴᴇʀ :- ʜᴀᴄᴋᴇʀ ʏᴏᴠɪ*\n` +
                                 `*ʙᴏᴛ ɴᴀᴍᴇ :- ʏᴏᴠɪ ᴍɪɴɪ ʙᴏᴛ ᴠ1*\n` +
                                    `*ʙᴏᴛ ᴡᴇʙ ꜱɪᴛᴇ*\n` +
@@ -520,7 +520,7 @@ case 'menu': {
         } 
     });
 
-    const title = '𝐘𝐎𝐕𝐈 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓 𝐌𝐄𝐍𝐔 😾❤*';
+    const title = '*NEDIYA* 𝐌𝐈𝐍𝐈 𝐁𝐎𝐓 𝐌𝐄𝐍𝐔 😾❤*';
     const text = `╭──➢\n` +
         `│ \`S T A T U S\`\n` +
         `│ *⦁ ʙᴏᴛ ɴᴀᴍᴇ*: ʏᴏᴠɪ ᴍɪɴɪ ʙᴏᴛ\n` +
@@ -709,7 +709,7 @@ case 'menu': {
 
                         const { title, uploader, duration, quality, format, thumbnail, download } = data.data.result;
 
-                        const titleText = '*𝚔𝚞𝚛𝚊𝚖𝚊 SONG DOWNLOAD*';
+                        const titleText = '*NEDIYA SONG DOWNLOAD*';
                         const content = `┏━━━━━━━━━━━━━━━━\n` +
                             `┃📝 \`Title\` : ${video.title}\n` +
                             `┃📈 \`Views\` : ${video.views}\n` +
